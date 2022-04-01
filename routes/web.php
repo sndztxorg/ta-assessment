@@ -42,6 +42,7 @@ Route::resource('users', 'UserController');
 
 /*Modul Assessment*/
 Route::get('/assessment', 'Assessment_SessionController@index');
+Route::get('/tes-assessment', 'Assessment_SessionController@index');
 Route::get('/search', 'Assessment_SessionController@search');
 Route::resource('assessmentSessions', 'Assessment_SessionController');
 Route::get('assessmentSessions/company/{id}', 'Assessment_SessionController@asCompany');
